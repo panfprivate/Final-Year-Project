@@ -1,0 +1,149 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".TaskEdit" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:tag="title" >
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/title" />
+
+        <EditText
+            android:id="@+id/task_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+    </LinearLayout>
+    
+    <LinearLayout android:tag="time alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+       	<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/time_alert" />
+       	
+       	<Spinner
+       	    android:id="@+id/spn_time_alert"
+       	    android:layout_width="match_parent"
+       	    android:layout_height="36dp" />
+        
+    </LinearLayout>
+    
+    <LinearLayout android:tag="time alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+       	<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/priority" />
+       	
+<!--       	<RadioGroup
+	       	    android:id="@+id/priority_group"
+	       	    android:layout_width="wrap_content"
+	       	    android:layout_height="wrap_content"
+	       	    android:orientation="horizontal" >
+
+	       	    <RadioButton
+		       	    android:id="@+id/none_priority"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"
+		       	    android:text="@string/none" />
+
+	       	    <RadioButton
+	       	        android:id="@+id/low_priority"
+	       	        android:layout_width="wrap_content"
+	       	        android:layout_height="wrap_content"
+	       	        android:checked="true"
+	       	        android:text="@string/low_priority" />
+	       	    
+	     	    <RadioButton
+		       	    android:id="@+id/med_priority"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"
+		       	    android:text="@string/med_priority" />
+	
+		       	<RadioButton
+		       	    android:id="@+id/high_priority"
+		       	    android:layout_width="wrap_content"
+		       	    android:layout_height="wrap_content"
+		       	    android:text="@string/high_priority" />
+       	</RadioGroup> 
+-->
+
+       	<Spinner
+       	    android:id="@+id/spinner1"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:layout_weight="1" />
+        
+    </LinearLayout>
+    
+    <LinearLayout android:tag="time alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+       	<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/time_alert" />
+
+       	<Button
+       	    android:id="@+id/btn_time_pick"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content" />
+
+       	<ToggleButton
+       	    android:id="@+id/togbtn_time_alert"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:text="Button" />
+        
+    </LinearLayout>
+    
+    <LinearLayout android:tag="loc alert"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+        
+       	<TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/loc_alert" />
+
+       	<ToggleButton
+       	    android:id="@+id/togbtn_loc_alert"
+       	    android:layout_width="wrap_content"
+       	    android:layout_height="wrap_content"
+       	    android:text="ToggleButton" />
+        
+    </LinearLayout>
+    
+    <TextView
+	        android:layout_width="wrap_content"
+	        android:layout_height="wrap_content"
+	        android:text="@string/body" />
+    
+    <EditText android:id="@+id/task_body"
+       	    android:layout_width="match_parent"
+       	    android:layout_height="wrap_content" />
+    
+    <Button android:id="@+id/save" 
+	  android:text="@string/btn_save"
+		android:layout_width="wrap_content"
+		android:layout_height="wrap_content" />
+    
+</LinearLayout>
